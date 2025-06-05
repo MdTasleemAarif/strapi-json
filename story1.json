@@ -1,0 +1,50 @@
+{
+    "uID" : 12,
+    "storyNo" : 125,
+    "category" :"Classic Fairy Tales",
+  "title": "Aladdin and the Magic Lamp – A Tale of Adventure and Triumph",
+  "slug": "aladdin-and-the-magic-lamp-tale-of-adventure-triumph",
+  "titleImage": "aladdin-cave-treasure.jpg",
+  "titleImageAltText": "Aladdin in a cave full of treasures with a dusty lamp, glowing eerily.",
+  "titleImageFileName": "aladdin-cave-treasure",
+  "metaDescription": "Step into the magical world of Aladdin, a poor boy who discovers the power of a mysterious lamp and a genie. From narrow escapes to magnificent palaces, and an epic battle against an evil magician, Aladdin’s story is one of courage, love, and triumph over darkness.",
+  "description": "Step into the magical world of Aladdin, a poor boy who discovers the power of a mysterious lamp and a genie. From narrow escapes to magnificent palaces, and an epic battle against an evil magician, Aladdin’s story is one of courage, love, and triumph over darkness.",
+  "Story": "### 🌟 Aladdin and the Magic Lamp – A Tale of Adventure and Triumph\n\nA long time ago, in a humble village in China, lived a poor boy named **Aladdin** with his mother. Life was simple, filled with hard work and little comfort.\n\nOne day, a mysterious man claiming to be a merchant from Arabia visited. “I need your son to assist me,” he said. Aladdin’s mother, hoping for a better future, agreed. But the man was no merchant — he was a cunning magician.\n\nThey journeyed far until they reached a desolate spot. The magician cast a spell, revealing a hidden cave full of treasure.\n\n> “Take the treasures, but bring me the old lamp,” he said.\n\nAladdin entered and marveled at the shimmering gold and jewels.\n\n![Aladdin in a cave full of treasures with a dusty lamp, glowing eerily.](http://localhost:1337/uploads/aladdin-cave-treasure.jpg)\n\nAt the entrance, Aladdin hesitated to give up the lamp. Enraged, the magician sealed him inside.\n\nIn despair, Aladdin rubbed the lamp — a swirling mist appeared, revealing a **genie**.\n\n> “Your wish is my command,” the genie boomed.\n\n![Genie appearing from the lamp, glowing and towering over Aladdin.](http://localhost:1337/uploads/aladdin-genie-appears.jpg)\n\nAladdin wished to go home. Soon, their poor hut became a magnificent palace, and Aladdin married the **Sultan’s daughter**.\n\nBut the magician returned. Disguised, he tricked the princess into trading the old lamp. He then ordered the genie to carry the palace away.\n\n![Magician lifting Aladdin's palace with the genie, desert in the background.](http://localhost:1337/uploads/magician-palace-lifting.jpg)\n\nAladdin still had the magic **ring**. He used it to reach the magician's lair, where he reclaimed the lamp and banished the villain forever.\n\n![Aladdin banishing the magician into another dimension, the princess in tears.](http://localhost:1337/uploads/aladdin-banishing-magician.jpg)\n\nWith the genie’s help, Aladdin restored the palace and lived happily ever after.",
+  "storyImage": [
+    "aladdin-cave-treasure.jpg",
+    "aladdin-genie-appears.jpg",
+    "magician-palace-lifting.jpg",
+    "aladdin-banishing-magician.jpg",
+    "aladdin-princess-genie-palace.jpg"
+  ],
+  "altText": [
+    "Aladdin in a cave full of treasures with a dusty lamp, glowing eerily.",
+    "Genie appearing from the lamp, glowing and towering over Aladdin.",
+    "Magician lifting Aladdin's palace with the genie, desert in the background.",
+    "Aladdin banishing the magician into another dimension, the princess in tears.",
+    "Aladdin and the princess standing before the palace with the genie hovering above them."
+  ],
+  "filename": [
+    "aladdin-cave-treasure",
+    "aladdin-genie-appears",
+    "magician-palace-lifting",
+    "aladdin-banishing-magician",
+    "aladdin-princess-genie-palace"
+  ],
+  "summary": "**Summary**  \nAladdin’s journey from poverty to greatness is a timeless tale of courage, wit, and magic. With the help of a mysterious lamp and its powerful genie, Aladdin overcomes an evil magician, rescues his princess, and transforms his destiny. This enchanting story reminds us that even in the darkest moments, hope and bravery can light the way.",
+  "snippetOptimization": "Aladdin’s magical tale shows how courage and cleverness can change fate—even with a little help from a genie.",
+  "faqs": "### ❓ Frequently Asked Questions\n\n**1. What is the moral of the story?**  \nThe moral of Aladdin’s story is that bravery, intelligence, and a pure heart can overcome even the darkest of challenges.\n\n**2. Why did the magician trick Aladdin?**  \nThe magician wanted to use the lamp’s power for selfish gain, showing that evil often disguises itself as good.\n\n**3. How does the genie help Aladdin?**  \nThe genie grants wishes that help Aladdin escape danger, gain riches, and defeat the magician.\n\n**4. What does the lamp symbolize in the story?**  \nThe lamp represents power, potential, and the responsibility tied to great gifts.\n\n**5. How does Aladdin's journey inspire readers?**  \nIt proves that even humble beginnings can lead to greatness through courage and love.",
+  "keywords": {
+    "keywords": [
+      "Aladdin and the Magic Lamp story",
+      "Classic tales of adventure and magic",
+      "Stories about courage and destiny",
+      "Timeless tales for children",
+      "Magical stories with genies",
+      "Lessons from Aladdin’s adventures",
+      "Overcoming evil in classic fairy tales"
+    ]
+  },
+  "ctaText": "Did this story inspire you? Share it with your friends or explore more magical tales on our website!",
+  "category": "Classic Fairy Tales"
+}

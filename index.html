@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Story Preview</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      padding: 30px;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.8;
+    }
+    .container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      max-width: 960px;
+      margin: auto;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+    img {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8em;
+      color: #222;
+      margin-bottom: 10px;
+    }
+    .meta, .section {
+      margin-top: 30px;
+    }
+    .meta div {
+      margin-bottom: 8px;
+      font-size: 0.95em;
+      color: #555;
+    }
+    .meta span.label {
+      font-weight: 700;
+      color: #888;
+    }
+    .section-title {
+      font-size: 1.6em;
+      margin-bottom: 10px;
+      color: #0056b3;
+      border-left: 5px solid #0056b3;
+      padding-left: 10px;
+    }
+    pre {
+      background: #f1f1f1;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    .story-images img {
+      margin-top: 15px;
+    }
+    blockquote {
+      border-left: 5px solid #007acc;
+      padding-left: 15px;
+      color: #555;
+      font-style: italic;
+      margin: 20px 0;
+    }
+    .cta-box {
+      background: #e8f4fd;
+      padding: 20px;
+      border-left: 5px solid #007acc;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="meta">
+    <div><span class="label">UID:</span> <span id="uID"></span></div>
+    <div><span class="label">Story No:</span> <span id="storyNo"></span></div>
+    <div><span class="label">Category:</span> <span id="category"></span></div>
+  </div>
+
+  <h1 id="title"></h1>
+  <img id="titleImage" src="" alt="">
+  <div class="meta">
+    <div><span class="label">Title Image Alt Text:</span> <span id="titleImageAltText"></span></div>
+    <div><span class="label">Title Image File Name:</span> <span id="titleImageFileName"></span></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Meta Description</div>
+    <p id="metaDescription"></p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Description</div>
+    <div id="description"></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Story</div>
+    <div id="Story"></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Story Images</div>
+    <div id="storyImages"></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Summary</div>
+    <div id="summary"></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Snippet Optimization</div>
+    <p id="snippetOptimization"></p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">FAQs</div>
+    <div id="faqs"></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Keywords</div>
+    <pre id="keywords"></pre>
+  </div>
+
+  <div class="cta-box">
+    <div class="section-title">Call to Action</div>
+    <p id="ctaText"></p>
+  </div>
+</div>
+
+<script>
+  async function loadStory() {
+    const response = await fetch('story1.json');  // fetch JSON from file
+    const storyData = await response.json();
+
+    document.getElementById('uID').textContent = storyData.uID;
+    document.getElementById('storyNo').textContent = storyData.storyNo;
+    document.getElementById('category').textContent = storyData.category;
+    document.getElementById('title').textContent = storyData.title;
+    document.getElementById('titleImage').src = storyData.titleImage;
+    document.getElementById('titleImage').alt = storyData.titleImageAltText;
+    document.getElementById('titleImageAltText').textContent = storyData.titleImageAltText;
+    document.getElementById('titleImageFileName').textContent = storyData.titleImageFileName;
+    document.getElementById('metaDescription').textContent = storyData.metaDescription;
+
+    document.getElementById('description').innerHTML = marked.parse(storyData.description);
+    document.getElementById('Story').innerHTML = marked.parse(storyData.Story);
+    
+    document.getElementById('summary').innerHTML = marked.parse(storyData.summary);
+    document.getElementById('faqs').innerHTML = marked.parse(storyData.faqs);
+
+    document.getElementById('snippetOptimization').textContent = storyData.snippetOptimization;
+    document.getElementById('ctaText').textContent = storyData.ctaText;
+    document.getElementById('keywords').textContent = JSON.stringify(storyData.keywords, null, 2);
+
+    const storyImagesContainer = document.getElementById('storyImages');
+    storyData.storyImage.forEach(img => {
+      const imageElem = document.createElement('img');
+      imageElem.src = img.src;
+      imageElem.alt = img.altText;
+      imageElem.title = img.filename;
+      storyImagesContainer.appendChild(imageElem);
+    });
+  }
+
+  loadStory();
+</script>
+
+</body>
+</html>
